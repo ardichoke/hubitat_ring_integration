@@ -1,0 +1,181 @@
+{
+  "packageName": "Hubitat Ring Integration (Unofficial)",
+  "author": "codahq",
+  "version": "0.1",
+  "minimumHEVersion": "0.0",
+  "dateReleased": "2020-06-08",
+  "apps": [
+    {
+      "id": "981fa0e5-b7c7-4459-a9ba-7ccdc51faa55",
+      "name": "Unofficial Ring Connect",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/apps/unofficial-ring-connect.groovy",
+      "required": true,
+      "oauth": false,
+      "version": "0.2"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "8f216a41-8eed-4246-8c83-f45e45d36967",
+      "name": "Ring API Virtual Device",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-api-virtual-device.groovy",
+      "required": false
+    },
+    {
+      "id": "5bcdd988-ccec-4f4b-9fc1-90d820fda1af",
+      "name": "Ring Virtual Alarm Hub",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-alarm-hub.groovy",
+      "required": false
+    },
+    {
+      "id": "70efa457-42eb-46ac-99f7-095a5e313149",
+      "name": "Ring Virtual Alarm Range Extender",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-alarm-range-extender.groovy",
+      "required": false
+    },
+    {
+      "id": "aead008c-f3f5-4ffd-b936-a5803213768f",
+      "name": "Ring Virtual Alarm Smoke & CO Listener",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-alarm-smoke-co-listener.groovy",
+      "required": false
+    },
+    {
+      "id": "d8892a22-34a9-47d8-893d-a69bb24c756d",
+      "name": "Ring Virtual Beams Bridge",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-beams-bridge.groovy",
+      "required": false
+    },
+    {
+      "id": "79d7248b-7db9-4b05-8f67-6c53e22662ee",
+      "name": "Ring Virtual Beams Group",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-beams-group.groovy",
+      "required": false
+    },
+    {
+      "id": "e27d6c9b-7442-4828-9d24-ca019939f524",
+      "name": "Ring Virtual Beams Light",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-beams-light.groovy",
+      "required": false
+    },
+    {
+      "id": "02be7aac-42b4-4ae8-b08e-89148dea5565",
+      "name": "Ring Virtual Beams Motion Sensor",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-beams-motion-sensor.groovy",
+      "required": false
+    },
+    {
+      "id": "69752fc9-099d-4cb9-a7ae-af50a4e9f238",
+      "name": "Ring Virtual Camera",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-camera.groovy",
+      "required": false
+    },
+    {
+      "id": "0971b13a-e3e3-43e6-b02f-b5d384db5a46",
+      "name": "Ring Virtual Camera with Siren",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-camera-with-siren.groovy",
+      "required": false
+    },
+    {
+      "id": "2bbff10b-0231-47d3-bb80-25d86d1a2317",
+      "name": "Ring Virtual Chime",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-chime.groovy",
+      "required": false
+    },
+    {
+      "id": "bca84b7f-a3ee-4464-bee7-47313fdc06de",
+      "name": "Ring Virtual CO Alarm",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-co-alarm.groovy",
+      "required": false
+    },
+    {
+      "id": "a64d3760-5873-4f65-8dc8-a67d23fc835c",
+      "name": "Ring Virtual Contact Sensor",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-contact-sensor.groovy",
+      "required": false
+    },
+    {
+      "id": "32b9f95d-1d97-4ae9-a59c-69bbb5d806a2",
+      "name": "Ring Virtual Alarm Flood & Freeze Sensor",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-flood-freeze-sensor.groovy",
+      "required": false
+    },
+    {
+      "id": "9d755c96-7282-4650-9eb0-a18fb918af2a",
+      "name": "Ring Virtual Keypad",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-keypad.groovy",
+      "required": false
+    },
+    {
+      "id": "0535ca0b-f816-411d-ace1-0febf3da27b6",
+      "name": "Ring Virtual Light",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-light.groovy",
+      "required": false
+    },
+    {
+      "id": "daea57e4-1600-404b-b58c-223ea870760b",
+      "name": "Ring Virtual Light with Siren",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-light-with-siren.groovy",
+      "required": false
+    },
+    {
+      "id": "9e38ce3c-a7ea-4db0-b82b-bf9d1772248d",
+      "name": "Ring Virtual Lock",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-lock.groovy",
+      "required": false
+    },
+    {
+      "id": "0d140155-f66a-49b1-86f4-695877a744d6",
+      "name": "Ring Virtual Motion Sensor",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-motion-sensor.groovy",
+      "required": false
+    },
+    {
+      "id": "bdb8b6e7-de9c-45e9-a286-6493fcebe4e5",
+      "name": "Ring Virtual Retrofit Alarm Kit",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-retrofit-alarm-kit.groovy",
+      "required": false
+    },
+    {
+      "id": "f65782ac-e70b-42dc-b6b6-90f75fd903ae",
+      "name": "Ring Virtual Siren",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-siren.groovy",
+      "required": false
+    },
+    {
+      "id": "a023f88d-63df-46f4-8c3c-6aee94b7dce2",
+      "name": "Ring Virtual Smoke Alarm",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-smoke-alarm.groovy",
+      "required": false
+    },
+    {
+      "id": "b7fa1b23-96d9-4407-8896-3b4af7372fc4",
+      "name": "Ring Virtual Switch",
+      "namespace": "ring-hubitat-codahq",
+      "location": "https://raw.githubusercontent.com/ardichoke/hubitat_ring_integration/master/src/drivers/ring-virtual-switch.groovy",
+      "required": false
+    }
+  ]
+}

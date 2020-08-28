@@ -36,16 +36,7 @@
  *  2020-02-29: Chime Pro v2 support
  *              Removed session functionality since it's no longer needed
  *              Changed namespace
- *  2020-05-11: Made 2FA true and read-only
- *              Support for non-alarm modes (Ring Modes)
- *              Support to auto-create hub/bridge devices
- *              Changes to make dual app, multi-location available (but not implemented yet)
- *              IFTTT page enhancements
- *              Create device enhancements
- *  2020-05-17  Scheduled refresh OAuth token
- *              Cleaned up initialize and scheduling so polling would persist better after restarts
- *  2020-05-19  Snapshot (camera thumbnails) support with documentation, polling and configuration links
- *              Updated user agent on some API calls. This may cause a new device to show logged in under Ring Control Center
+ *  2020-07-22: Added support for second device ID of wired Spotlight Cam
  *
  *
  */
@@ -875,12 +866,28 @@ def configureDingPolling() {
     pollDings()
   }
 
+<<<<<<< HEAD
   unschedule(pollDings)
   if (dingPolling) {
     setupDingables()
     pollDings()
   }
   */
+=======
+def getRINGABLES() {
+  return [
+    "doorbell",
+    "doorbell_v3",
+    "doorbell_v4",
+    "doorbell_v5",
+    "doorbell_portal",
+    "doorbell_scallop_lite",
+    "doorbell_scallop",
+    "lpd_v1",
+    "lpd_v2",
+    "jbox_v1"
+  ]
+>>>>>>> master
 }
 
 def getDings() {
@@ -890,6 +897,7 @@ def getDings() {
   }
 }
 
+<<<<<<< HEAD
 def configureSnapshotPolling() {
   logDebug "configureSnapshotPolling()"
   unschedule(prepSnapshots)
@@ -898,6 +906,34 @@ def configureSnapshotPolling() {
   if (snapshotPolling) {
     logInfo "Snapshot polling started with an interval of ${snapshotInvertals[snapshotInterval as Integer].toLowerCase()}."
     setupDingables()
+=======
+    "hp_cam_v1": [name: "Ring Floodlight Cam", driver: "Ring Virtual Light with Siren", dingable: true],
+    "hp_cam_v2": [name: "Ring Spotlight Cam Wired", driver: "Ring Virtual Light with Siren", dingable: true],
+    "spotlightw_v2": [name: "Ring Spotlight Cam Wired", driver: "Ring Virtual Light with Siren", dingable: true],
+    "floodlight_v2": [name: "Ring Floodlight Cam Wired", driver: "Ring Virtual Light with Siren", dingable: true],
+    "stickup_cam": [name: "Ring Original Stick Up Cam", driver: "Ring Virtual Camera", dingable: true],
+    "stickup_cam_v3": [name: "Ring Stick Up Cam", driver: "Ring Virtual Camera", dingable: true],
+    "stickup_cam_v4": [name: "Ring Spotlight Cam Battery", driver: "Ring Virtual Light", dingable: true],
+    "stickup_cam_lunar": [name: "Ring Stick Up Cam Battery", driver: "Ring Virtual Camera with Siren", dingable: true],
+    "cocoa_camera": [name: "Ring Stick Up Cam Battery", driver: "Ring Virtual Camera with Siren", dingable: true],
+    "stickup_cam_elite": [name: "Ring Stick Up Cam Wired", driver: "Ring Virtual Camera with Siren", dingable: true],
+    "stickup_cam_mini": [name: "Ring Indoor Cam", driver: "Ring Virtual Camera with Siren", dingable: true],
+    "doorbell": [name: "Ring Video Doorbell", driver: "Ring Virtual Camera", dingable: true],
+    "doorbell_v3": [name: "Ring Video Doorbell", driver: "Ring Virtual Camera", dingable: true],
+    "doorbell_v4": [name: "Ring Video Doorbell 2", driver: "Ring Virtual Camera", dingable: true],
+    "doorbell_v5": [name: "Ring Video Doorbell 2", driver: "Ring Virtual Camera", dingable: true],
+    "doorbell_scallop_lite": [name: "Ring Video Doorbell 3", driver: "Ring Virtual Camera", dingable: true],
+    "doorbell_scallop": [name: "Ring Video Doorbell 3 Plus", driver: "Ring Virtual Camera", dingable: true],
+    "doorbell_portal": [name: "Ring Peephole Cam", driver: "Ring Virtual Camera", dingable: true],
+    "lpd_v1": [name: "Ring Video Doorbell Pro", driver: "Ring Virtual Camera", dingable: true],
+    "lpd_v2": [name: "Ring Video Doorbell Pro 2", driver: "Ring Virtual Camera", dingable: true],
+    "jbox_v1": [name: "Ring Video Doorbell Elite", driver: "Ring Virtual Camera", dingable: true],
+    "chime": [name: "Ring Chime", driver: "Ring Virtual Chime", dingable: false],
+    "chime_pro": [name: "Ring Chime Pro", driver: "Ring Virtual Chime", dingable: false],
+    "chime_pro_v2": [name: "Ring Chime Pro (v2)", driver: "Ring Virtual Chime", dingable: false],
+    "base_station_v1": [name: "Ring Alarm (API Device)", driver: "Ring API Virtual Device", dingable: false],
+    "beams_bridge_v1": [name: "Ring Bridge (API Device)", driver: "Ring API Virtual Device", dingable: false]
+>>>>>>> master
 
     //let's spread schedules out so that there is some randomness in how we hit the ring api
     int interval = snapshotInterval != null ? snapshotInterval.toInteger() : 600
