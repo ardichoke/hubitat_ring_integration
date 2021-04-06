@@ -323,7 +323,7 @@ def setValues(deviceInfo) {
     if (nw.ppp0) {
       sendEvent(name: nw.ppp0.type.capitalize(), value: "${nw.ppp0.name} RSSI ${nw.ppp0.rssi}")
     }
-    if (nw.wlan0) {
+    if (nw.wlan0.type != null) {
       sendEvent(name: nw.wlan0.type.capitalize(), value: "${nw.wlan0.ssid} RSSI ${nw.wlan0.rssi}")
     }
   }
