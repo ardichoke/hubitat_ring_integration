@@ -47,6 +47,7 @@
  *  2020-05-19  Snapshot (camera thumbnails) support with documentation, polling and configuration links
  *              Updated user agent on some API calls. This may cause a new device to show logged in under Ring Control Center
  *  2020-07-22: Added support for second device ID of wired Spotlight Cam
+ *  2021-05-02: Added support for second device ID of Ring Video Doorbell Pro 2
  *
  *
  */
@@ -1793,6 +1794,7 @@ def isOAuthEnabled() {
   "cocoa_doorbell",
   "lpd_v1",
   "lpd_v2",
+  "lpd_v4",
   "jbox_v1"
 ]
 
@@ -1803,7 +1805,7 @@ def isOAuthEnabled() {
   "chime_pro_v2": [name: "Ring Chime Pro (v2)", driver: "Ring Virtual Chime", dingable: false],
   "chime_pro": [name: "Ring Chime Pro", driver: "Ring Virtual Chime", dingable: false],
   "chime": [name: "Ring Chime", driver: "Ring Virtual Chime", dingable: false],
-  "cocoa_camera": [name: "Ring Stick Up Cam Battery", driver: "Ring Virtual Camera with Siren", dingable: true],
+  "cocoa_camera": [name: "Ring Stick Up Cam", driver: "Ring Virtual Camera with Siren", dingable: true],
   "cocoa_doorbell": [name: "Ring Video Doorbell 2020", driver: "Ring Virtual Camera", dingable: true],
   "doorbell_portal": [name: "Ring Peephole Cam", driver: "Ring Virtual Camera", dingable: true],
   "doorbell_scallop_lite": [name: "Ring Video Doorbell 3", driver: "Ring Virtual Camera", dingable: true],
@@ -1818,6 +1820,7 @@ def isOAuthEnabled() {
   "jbox_v1": [name: "Ring Video Doorbell Elite", driver: "Ring Virtual Camera", dingable: true],
   "lpd_v1": [name: "Ring Video Doorbell Pro", driver: "Ring Virtual Camera", dingable: true],
   "lpd_v2": [name: "Ring Video Doorbell Pro 2", driver: "Ring Virtual Camera", dingable: true],
+  "lpd_v4": [name: "Ring Video Doorbell Pro 2", driver: "Ring Virtual Camera", dingable: true],
   "spotlightw_v2": [name: "Ring Spotlight Cam Wired", driver: "Ring Virtual Light with Siren", dingable: true],
   "stickup_cam_elite": [name: "Ring Stick Up Cam Wired", driver: "Ring Virtual Camera with Siren", dingable: true],
   "stickup_cam_lunar": [name: "Ring Stick Up Cam Battery", driver: "Ring Virtual Camera with Siren", dingable: true],
