@@ -47,6 +47,7 @@
  *  2020-05-19  Snapshot (camera thumbnails) support with documentation, polling and configuration links
  *              Updated user agent on some API calls. This may cause a new device to show logged in under Ring Control Center
  *  2020-07-22: Added support for second device ID of wired Spotlight Cam
+ *  2021-06-30: Added support for Ring Floodlight Cam Wired Plus
  *
  *
  */
@@ -1791,6 +1792,7 @@ def isOAuthEnabled() {
   "doorbell_scallop",
   "doorbell_scallop_lite",
   "cocoa_doorbell",
+  "cocoa_floodlight",
   "lpd_v1",
   "lpd_v2",
   "jbox_v1"
@@ -1805,6 +1807,7 @@ def isOAuthEnabled() {
   "chime": [name: "Ring Chime", driver: "Ring Virtual Chime", dingable: false],
   "cocoa_camera": [name: "Ring Stick Up Cam Battery", driver: "Ring Virtual Camera with Siren", dingable: true],
   "cocoa_doorbell": [name: "Ring Video Doorbell 2020", driver: "Ring Virtual Camera", dingable: true],
+  "cocoa_floodlight": [name: "Ring Floodlight Cam Wired Plus", driver: "Ring Virtual Light with Siren", dingable: true], 
   "doorbell_portal": [name: "Ring Peephole Cam", driver: "Ring Virtual Camera", dingable: true],
   "doorbell_scallop_lite": [name: "Ring Video Doorbell 3", driver: "Ring Virtual Camera", dingable: true],
   "doorbell_scallop": [name: "Ring Video Doorbell 3 Plus", driver: "Ring Virtual Camera", dingable: true],
